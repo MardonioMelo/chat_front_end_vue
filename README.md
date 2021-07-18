@@ -1,5 +1,6 @@
 # chatbot_front_end
 
+Essa aplicação está em desenvolvimento...
 ## Project setup
 ```
 npm install
