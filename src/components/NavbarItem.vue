@@ -6,7 +6,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <router-link class="navbar-brand" to="/">Carousel</router-link>
+        <router-link class="navbar-brand" to="/">ChatBot</router-link>
         <button
           class="navbar-toggler"
           type="button"

@@ -1,6 +1,6 @@
 <template>
   <NavbarItem />
-  <main> 
+  <main>
     <router-view />
   </main>
   <FooterItem />
@@ -10,11 +10,10 @@
 import FooterItem from "@/components/FooterItem.vue";
 import NavbarItem from "@/components/NavbarItem.vue";
 
-
 export default {
   components: {
     NavbarItem,
-    FooterItem   
+    FooterItem,
   },
 };
 </script>

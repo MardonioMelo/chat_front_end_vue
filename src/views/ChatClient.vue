@@ -1,6 +1,9 @@
 <template>
-   <div class="container-fluid pb-3">
-    <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr">
+  <div class="container-fluid pb-3">
+    <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr 2fr">
+      <div class="bg-light border rounded-3">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
       <div class="bg-light border rounded-3">
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
@@ -13,10 +16,9 @@
 
 <script>
 export default {
-name: "ChatClient"
-}
+  name: "ChatClient",
+};
 </script>
 
 <style>
-
 </style>

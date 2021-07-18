@@ -1,5 +1,9 @@
 <template>
-  <footer>Footer</footer>
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container-fluid">
+     Footer
+    </div>
+  </nav>
 </template>
 
 <script>
