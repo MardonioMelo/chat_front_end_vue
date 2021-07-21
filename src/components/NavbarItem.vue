@@ -4,7 +4,7 @@
       <img :src="logo" :alt="alt" id="logo" />
     </router-link>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-indigo">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-pink">
       <div class="container-fluid">
         <router-link class="navbar-brand" to="/">ChatBot</router-link>
         <button
