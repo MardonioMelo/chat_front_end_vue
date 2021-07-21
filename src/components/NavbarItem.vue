@@ -1,10 +1,10 @@
 <template>
-  <header class="py-3 bg-dark mb-3 border-bottom">
+  <header class="py-3 mb-3 border-bottom">
     <router-link to="/" id="logo-url">
       <img :src="logo" :alt="alt" id="logo" />
     </router-link>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-indigo">
       <div class="container-fluid">
         <router-link class="navbar-brand" to="/">ChatBot</router-link>
         <button
