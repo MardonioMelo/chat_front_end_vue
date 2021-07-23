@@ -23,8 +23,7 @@ export default {
   name: "NavbarItem", 
   props: ["teste"],  
   data() {
-    return {
-      title: "Chat - Atendimento",      
+    return {        
       avatar: "https://c0.klipartz.com/pngpicture/348/800/gratis-png-hombre-vestido-con-camisa-azul-ilustracion-iconos-de-computadora-avatar-usuario-login-avatar-thumbnail.png"
     }
   },  
