@@ -1,23 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import ChatClint from '../views/ChatClient'
-import LoginView from '../views/LoginView'
+import TplLogin from '../views/TplLogin.vue'
+import TplLogout from '../views/TplLogout.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
-  },
-  {
-    path: '/chat-client',
-    name: 'ChatClint',
-    component: ChatClint
+    component: Home 
   },
   {
     path: '/login',
-    name: 'LoginView',
-    component: LoginView
+    name: 'TplLogin',
+    component: TplLogin    
+  },  
+  {
+    path: '/logout',
+    name: 'TplLogout',
+    component: TplLogout    
   },
   // {
   //   path: '/about',
