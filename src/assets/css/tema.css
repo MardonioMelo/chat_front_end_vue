@@ -1,3 +1,4 @@
+
 a,
 img {
     -moz-transition: all .3s;
@@ -66,7 +67,7 @@ p {
 ::-webkit-scrollbar-thumb {
     background: #e8e8e8
 }
-
+/* 
 @font-face {
     font-family: CircularStd;
     src: url(../fonts/circular/CircularStd-Black.eot);
@@ -137,7 +138,7 @@ p {
     src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material/MaterialIcons-Regular.woff2) format('woff2'), url(../fonts/material/MaterialIcons-Regular.woff) format('woff'), url(../fonts/material/MaterialIcons-Regular.ttf) format('truetype');
     font-weight: 400;
     font-style: normal
-}
+} */
 
 .form-control {
     padding: 25px 15px;
@@ -239,8 +240,7 @@ p {
     background: #ffc107 !important
 }
 
-.material-icons {
-    font-family: 'Material Icons';
+.material-icons { 
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
@@ -257,7 +257,7 @@ p {
     font-feature-settings: 'liga'
 }
 
-.material-icons.md-18 {
+/* .material-icons.md-18 {
     font-size: 18px
 }
 
@@ -275,7 +275,7 @@ p {
 
 .material-icons.md-48 {
     font-size: 48px
-}
+} */
 
 .switch {
     position: relative;
@@ -514,7 +514,7 @@ input:checked+.slider:before {
 
 .navigation .inside .menu .material-icons {
     display: block;
-    font-size: 45px;
+    font-size: 30px;
     margin-bottom: 40px
 }
 
@@ -528,7 +528,7 @@ input:checked+.slider:before {
 
 .navigation .inside .menu .power .material-icons {
     display: block;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 0
 }

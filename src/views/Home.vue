@@ -1,6 +1,6 @@
 <template>
 	<div class="layout">
-		<NavbarItem />
+		<NavbarItem />		
 		<!-- Start of Sidebar -->
 		<div class="sidebar" id="sidebar">
 			<div class="container">
