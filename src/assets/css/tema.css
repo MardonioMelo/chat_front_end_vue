@@ -22,7 +22,7 @@ p {
 }
 
 body {
-    font-family: CircularStd, sans-serif;
+    font-family: 'CircularStd';
     font-size: 15px;
     background: #fdfdfd;
     color: #bdbac2
@@ -67,7 +67,7 @@ p {
 ::-webkit-scrollbar-thumb {
     background: #e8e8e8
 }
-/* 
+
 @font-face {
     font-family: CircularStd;
     src: url(../fonts/circular/CircularStd-Black.eot);
@@ -132,7 +132,7 @@ p {
     font-style: italic
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Material Icons';
     src: url(../fonts/material/MaterialIcons-Regular.eot);
     src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material/MaterialIcons-Regular.woff2) format('woff2'), url(../fonts/material/MaterialIcons-Regular.woff) format('woff'), url(../fonts/material/MaterialIcons-Regular.ttf) format('truetype');
@@ -257,7 +257,7 @@ p {
     font-feature-settings: 'liga'
 }
 
-/* .material-icons.md-18 {
+.material-icons.md-18 {
     font-size: 18px
 }
 
@@ -275,7 +275,7 @@ p {
 
 .material-icons.md-48 {
     font-size: 48px
-} */
+}
 
 .switch {
     position: relative;
