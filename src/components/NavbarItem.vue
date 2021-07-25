@@ -3,33 +3,34 @@
   <div class="navigation">
     <div class="container">
       <div class="inside">
-        <div class="nav nav-tab menu">
+        <div class="nav nav-pills menu" id="pills-tab">
           <button class="btn">
             <img class="avatar-xl" :src="avatar" alt="avatar" />
           </button>
-          <a href="#members" data-toggle="tab">
-            <span class="material-icons active">
+          <a href="#" data-bs-toggle="pill" data-bs-target="#members" data-toggle="tab">         
+            <span class="material-icons" @click="setActive('active')" :class="{ active:isActive('active') }">
               <i class="fa fa-user-circle" aria-hidden="true"></i>
             </span>
           </a>
-          <a href="#discussions" data-toggle="tab">
-            <span class="material-icons">
+          <a href="#" data-bs-toggle="pill" data-bs-target="#discussions" data-toggle="tab">
+            <span class="material-icons" @click="setActive('resumo')" :class="{ active:isActive('resumo') }">
               <i class="far fa-comments" aria-hidden="true"></i>
             </span>
           </a>
-          <a href="#notifications" data-toggle="tab" class="f-grow1">
-            <span class="material-icons">
+          <a href="#" data-bs-toggle="pill" data-bs-target="#notifications" data-toggle="tab">      
+            <span class="material-icons" @click="setActive('resumo')" :class="{ active:isActive('resumo') }">
               <i class="far fa-bell" aria-hidden="true"></i>
             </span>
           </a>
+          <span class="f-grow1"></span>
           <button class="btn mode">
             <span class="material-icons">
               <i class="fas fa-moon" aria-hidden="true"></i>
             </span>
           </button>
-          <a href="#settings" data-toggle="tab">
-            <span class="material-icons">
-              <i class="fas fa-cog" aria-hidden="true"></i>
+          <a href="#" data-bs-toggle="pill" data-bs-target="#settings" data-toggle="tab">         
+            <span class="material-icons" @click="setActive('resumo')" :class="{ active:isActive('resumo') }">
+              <i class="fas fa-cog" aria-hidden="true"> </i>
             </span>
           </a>
           <router-link class="btn power" to="/login">
@@ -42,24 +43,58 @@
     </div>
   </div>
   <!-- End of Navigation -->
+
+  <!-- Start of Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="tab-content">
+          <ContactsItem />
+          <DiscussionsItem />
+          <SettingsItem />
+          <NotificationsItem />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Sidebar -->
+
 </template>
 
 <script>
+
+import ContactsItem from "./ContactsItem.vue";
+import DiscussionsItem from "./DiscussionsItem.vue";
+import NotificationsItem from "./NotificationsItem.vue";
+import SettingsItem from "./SettingsItem.vue";
+
 export default {
   name: "NavbarItem",
-  props: ["image"],
+  props: ["avatar"],
+  components:{
+    ContactsItem,
+    DiscussionsItem,
+    SettingsItem,
+    NotificationsItem
+  },
   data() {
     return {
-      avatar:
-        "https://c0.klipartz.com/pngpicture/348/800/gratis-png-hombre-vestido-con-camisa-azul-ilustracion-iconos-de-computadora-avatar-usuario-login-avatar-thumbnail.png",
+     activeItem: 'active'
     };
   },
-  methods: {
-
-    // $(".menu a i").on("click", function () {
-    //      $(".menu a i").removeClass("active"),
-    //       $(this).addClass("active")
-    //  })
+  created() {
+   
+  },
+  methods: {  
+    isActive: function (menuItem) {
+      return this.activeItem === menuItem
+    },
+    setActive: function (menuItem) {
+      this.activeItem = menuItem 
+    }    
+  },
+  mounted() {
+    
   },
 };
 </script>

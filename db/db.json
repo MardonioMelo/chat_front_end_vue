@@ -1,20 +1,72 @@
 {
+    "profile_error": {
+        "result": false,
+        "error": {
+            "msg": "Opss! Algo de errado não está certo!"
+        }
+    },
     "profile": [
         {
             "id": 1,
+            "result": true,
+            "error": {
+                "msg": "Sucesso!",
+                "data": {
+                    "id": 1,
+                    "name": "Carla",
+                    "uuid": "qwertyuiopasdfghjklzxcvbnm",
+                    "lastname": "Sandra Gomes",
+                    "avatar": null,
+                    "cpf": "58847738385",
+                    "institution": "Umbrella Corporation",
+                    "city": "Raccoon City",
+                    "updated_at": "25/07/2021",
+                    "created_at": "24/07/2021"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "result": true,
+            "error": {
+                "msg": "Sucesso!",
+                "data": {
+                    "id": 1,
+                    "name": "Carla",
+                    "uuid": "qwertyuiopasdfghjklzxcvbnm",
+                    "lastname": "Sandra Gomes",
+                    "avatar": "http://192.168.0.12:8080/avatars/avatar-1.png",
+                    "cpf": "58847738385",
+                    "institution": "Umbrella Corporation",
+                    "city": "Raccoon City",
+                    "updated_at": "25/07/2021",
+                    "created_at": "24/07/2021"
+                }
+            }
+        }
+    ],
+    "attendant": [
+        {
+            "id": 1,
             "name": "Carla",
+            "uuid": "qwertyuiopasdfghjklzxcvbnm",
             "lastname": "Sandra Gomes",
             "avatar": "http://localhost:8080/avatars/avatar-1.png",
             "cpf": "58847738385",
+            "institution": "Umbrella Corporation",
+            "city": "Raccoon City",
             "updated_at": "25/07/2021",
             "created_at": "24/07/2021"
         },
         {
             "id": 2,
             "name": "César",
+            "uuid": "qwertyuiopasdfghjklzxcvbnm",
             "lastname": "Kaique Tomás dos Santos",
             "avatar": "http://localhost:8080/avatars/avatar-2.png",
             "cpf": "55345726981",
+            "institution": "Umbrella Corporation",
+            "city": "Raccoon City",
             "updated_at": "25/07/2021",
             "created_at": "24/07/2021"
         }
@@ -23,58 +75,70 @@
         {
             "id": 1,
             "name": "Vinicius",
+            "uuid": "qwertyuiopasdfghjklzxcvbnm",
             "lastname": "Samuel Pietro Aparício",
             "avatar": "http://localhost:8080/avatars/avatar-3.png",
             "cpf": "54640936567",
+            "institution": "Hero Academia",
+            "city": "Iporá-GO",
             "updated_at": "25/07/2021",
             "created_at": "24/07/2021"
         },
         {
             "id": 2,
             "name": "Osvaldo",
+            "uuid": "qwertyuiopasdfghjklzxcvbnm",
             "lastname": "Leonardo Geraldo Pires",
             "avatar": "http://localhost:8080/avatars/avatar-4.png",
             "cpf": "19995965100",
+            "institution": "Martelin de Ouro",
+            "city": "Bahia",
             "updated_at": "25/07/2021",
             "created_at": "24/07/2021"
         },
         {
             "id": 3,
             "name": "Teresinha",
+            "uuid": "qwertyuiopasdfghjklzxcvbnm",
             "lastname": "Jaqueline da Mata",
             "avatar": "http://localhost:8080/avatars/avatar-5.png",
             "cpf": "19995965100",
+            "institution": "Faculdade da Vida",
+            "city": "Anápolis-GO",
             "updated_at": "25/07/2021",
             "created_at": "24/07/2021"
         }
     ],
-    "client": [
+    "row": [
         {
             "id": 1,
             "name": "Vinicius",
             "lastname": "Samuel Pietro Aparício",
             "avatar": "http://localhost:8080/avatars/avatar-3.png",
-            "cpf": "54640936567",
-            "updated_at": "25/07/2021",
-            "created_at": "24/07/2021"
+            "subject": "Dúvida do sistema",
+            "description": "Olá, gostaria de saber como cadastrar os alunos."
         },
         {
             "id": 2,
             "name": "Osvaldo",
             "lastname": "Leonardo Geraldo Pires",
             "avatar": "http://localhost:8080/avatars/avatar-4.png",
-            "cpf": "19995965100",
-            "updated_at": "25/07/2021",
-            "created_at": "24/07/2021"
+            "subject": "Erro no sistema",
+            "description": "O sistema está dando erro no cadastro de aulas"
         },
         {
             "id": 3,
             "name": "Teresinha",
             "lastname": "Jaqueline da Mata",
             "avatar": "http://localhost:8080/avatars/avatar-5.png",
-            "cpf": "19995965100",
-            "updated_at": "25/07/2021",
-            "created_at": "24/07/2021"
+            "subject": "Gerar boleto",
+            "description": "Bom dia! Vocês podem gerar um boleto pra me por favor meu amor!"
+        }
+    ],
+    "chat": [
+        {
+            "msg": "Olá",
+            "reply": "Bom dia, em que posso ajudar?"
         }
     ]
 }

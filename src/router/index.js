@@ -1,13 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Attendant from '../views/Attendant.vue'
+import Client from '../views/Client.vue'
 import TplLogin from '../views/TplLogin.vue'
 import TplLogout from '../views/TplLogout.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home 
+    name: 'Attendant',
+    component: Attendant 
+  },
+  {
+    path: '/client',
+    name: 'Client',
+    component: Client 
   },
   {
     path: '/login',
