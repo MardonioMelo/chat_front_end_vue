@@ -8,13 +8,13 @@
             <img class="avatar-xl" :src="avatar" alt="avatar" />
           </button>
           <a href="#members" data-toggle="tab">
-            <span class="material-icons">
+            <span class="material-icons active">
               <i class="fa fa-user-circle" aria-hidden="true"></i>
             </span>
           </a>
-          <a href="#discussions" data-toggle="tab" class="active">
+          <a href="#discussions" data-toggle="tab">
             <span class="material-icons">
-              <i class="far fa-comments" aria-hidden="true"> </i>
+              <i class="far fa-comments" aria-hidden="true"></i>
             </span>
           </a>
           <a href="#notifications" data-toggle="tab" class="f-grow1">
@@ -22,11 +22,11 @@
               <i class="far fa-bell" aria-hidden="true"></i>
             </span>
           </a>
-          <!-- <button class="btn mode">
+          <button class="btn mode">
             <span class="material-icons">
               <i class="fas fa-moon" aria-hidden="true"></i>
             </span>
-          </button> -->
+          </button>
           <a href="#settings" data-toggle="tab">
             <span class="material-icons">
               <i class="fas fa-cog" aria-hidden="true"></i>
@@ -54,6 +54,12 @@ export default {
         "https://c0.klipartz.com/pngpicture/348/800/gratis-png-hombre-vestido-con-camisa-azul-ilustracion-iconos-de-computadora-avatar-usuario-login-avatar-thumbnail.png",
     };
   },
-  methods: {},
+  methods: {
+
+    // $(".menu a i").on("click", function () {
+    //      $(".menu a i").removeClass("active"),
+    //       $(this).addClass("active")
+    //  })
+  },
 };
 </script>

@@ -1,0 +1,80 @@
+{
+    "profile": [
+        {
+            "id": 1,
+            "name": "Carla",
+            "lastname": "Sandra Gomes",
+            "avatar": "http://localhost:8080/avatars/avatar-1.png",
+            "cpf": "58847738385",
+            "updated_at": "25/07/2021",
+            "created_at": "24/07/2021"
+        },
+        {
+            "id": 2,
+            "name": "César",
+            "lastname": "Kaique Tomás dos Santos",
+            "avatar": "http://localhost:8080/avatars/avatar-2.png",
+            "cpf": "55345726981",
+            "updated_at": "25/07/2021",
+            "created_at": "24/07/2021"
+        }
+    ],
+    "client": [
+        {
+            "id": 1,
+            "name": "Vinicius",
+            "lastname": "Samuel Pietro Aparício",
+            "avatar": "http://localhost:8080/avatars/avatar-3.png",
+            "cpf": "54640936567",
+            "updated_at": "25/07/2021",
+            "created_at": "24/07/2021"
+        },
+        {
+            "id": 2,
+            "name": "Osvaldo",
+            "lastname": "Leonardo Geraldo Pires",
+            "avatar": "http://localhost:8080/avatars/avatar-4.png",
+            "cpf": "19995965100",
+            "updated_at": "25/07/2021",
+            "created_at": "24/07/2021"
+        },
+        {
+            "id": 3,
+            "name": "Teresinha",
+            "lastname": "Jaqueline da Mata",
+            "avatar": "http://localhost:8080/avatars/avatar-5.png",
+            "cpf": "19995965100",
+            "updated_at": "25/07/2021",
+            "created_at": "24/07/2021"
+        }
+    ],
+    "client": [
+        {
+            "id": 1,
+            "name": "Vinicius",
+            "lastname": "Samuel Pietro Aparício",
+            "avatar": "http://localhost:8080/avatars/avatar-3.png",
+            "cpf": "54640936567",
+            "updated_at": "25/07/2021",
+            "created_at": "24/07/2021"
+        },
+        {
+            "id": 2,
+            "name": "Osvaldo",
+            "lastname": "Leonardo Geraldo Pires",
+            "avatar": "http://localhost:8080/avatars/avatar-4.png",
+            "cpf": "19995965100",
+            "updated_at": "25/07/2021",
+            "created_at": "24/07/2021"
+        },
+        {
+            "id": 3,
+            "name": "Teresinha",
+            "lastname": "Jaqueline da Mata",
+            "avatar": "http://localhost:8080/avatars/avatar-5.png",
+            "cpf": "19995965100",
+            "updated_at": "25/07/2021",
+            "created_at": "24/07/2021"
+        }
+    ]
+}
