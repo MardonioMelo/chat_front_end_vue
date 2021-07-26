@@ -8,17 +8,17 @@
             <img class="avatar-xl" :src="avatar" alt="avatar" />
           </button>
           <a href="#" data-bs-toggle="pill" data-bs-target="#members" data-toggle="tab">         
-            <span class="material-icons" @click="setActive('active')" :class="{ active:isActive('active') }">
+            <span class="material-icons" @click="setActive('members')" :class="{ active:isActive('members')}">
               <i class="fa fa-user-circle" aria-hidden="true"></i>
             </span>
           </a>
           <a href="#" data-bs-toggle="pill" data-bs-target="#discussions" data-toggle="tab">
-            <span class="material-icons" @click="setActive('resumo')" :class="{ active:isActive('resumo') }">
+            <span class="material-icons" @click="setActive('discussions')" :class="{ active:isActive('discussions') }">
               <i class="far fa-comments" aria-hidden="true"></i>
             </span>
           </a>
           <a href="#" data-bs-toggle="pill" data-bs-target="#notifications" data-toggle="tab">      
-            <span class="material-icons" @click="setActive('resumo')" :class="{ active:isActive('resumo') }">
+            <span class="material-icons" @click="setActive('notifications')" :class="{ active:isActive('notifications') }">
               <i class="far fa-bell" aria-hidden="true"></i>
             </span>
           </a>
@@ -29,7 +29,7 @@
             </span>
           </button>
           <a href="#" data-bs-toggle="pill" data-bs-target="#settings" data-toggle="tab">         
-            <span class="material-icons" @click="setActive('resumo')" :class="{ active:isActive('resumo') }">
+            <span class="material-icons" @click="setActive('settings')" :class="{ active:isActive('settings') }">
               <i class="fas fa-cog" aria-hidden="true"> </i>
             </span>
           </a>
@@ -86,7 +86,7 @@ export default {
    
   },
   methods: {  
-    isActive: function (menuItem) {
+    isActive: function (menuItem) {     
       return this.activeItem === menuItem
     },
     setActive: function (menuItem) {
