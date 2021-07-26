@@ -7,27 +7,12 @@
           <button class="btn">
             <img class="avatar-xl" :src="avatar" alt="avatar" />
           </button>
-          <a href="#" data-bs-toggle="pill" data-bs-target="#members" data-toggle="tab">         
-            <span class="material-icons" @click="setActive('members')" :class="{ active:isActive('members')}">
-              <i class="fa fa-user-circle" aria-hidden="true"></i>
-            </span>
-          </a>
           <a href="#" data-bs-toggle="pill" data-bs-target="#discussions" data-toggle="tab">
             <span class="material-icons" @click="setActive('discussions')" :class="{ active:isActive('discussions') }">
               <i class="far fa-comments" aria-hidden="true"></i>
             </span>
-          </a>
-          <a href="#" data-bs-toggle="pill" data-bs-target="#notifications" data-toggle="tab">      
-            <span class="material-icons" @click="setActive('notifications')" :class="{ active:isActive('notifications') }">
-              <i class="far fa-bell" aria-hidden="true"></i>
-            </span>
-          </a>
-          <span class="f-grow1"></span>
-          <button class="btn mode">
-            <span class="material-icons">
-              <i class="fas fa-moon" aria-hidden="true"></i>
-            </span>
-          </button>
+          </a>    
+          <span class="f-grow1"></span>         
           <a href="#" data-bs-toggle="pill" data-bs-target="#settings" data-toggle="tab">         
             <span class="material-icons" @click="setActive('settings')" :class="{ active:isActive('settings') }">
               <i class="fas fa-cog" aria-hidden="true"> </i>
@@ -48,11 +33,9 @@
   <div class="sidebar" id="sidebar">
     <div class="container">
       <div class="col-md-12">
-        <div class="tab-content">
-          <ContactsItem />
+        <div class="tab-content">        
           <DiscussionsItem />
-          <SettingsItem />
-          <NotificationsItem />
+          <SettingsItem :avatar="avatar" />         
         </div>
       </div>
     </div>
@@ -63,19 +46,15 @@
 
 <script>
 
-import ContactsItem from "./ContactsItem.vue";
 import DiscussionsItem from "./DiscussionsItem.vue";
-import NotificationsItem from "./NotificationsItem.vue";
 import SettingsItem from "./SettingsItem.vue";
 
 export default {
   name: "NavbarItem",
   props: ["avatar"],
   components:{
-    ContactsItem,
-    DiscussionsItem,
-    SettingsItem,
-    NotificationsItem
+    DiscussionsItem,   
+    SettingsItem,  
   },
   data() {
     return {
@@ -94,7 +73,7 @@ export default {
     }    
   },
   mounted() {
-    this.setActive('members')
+    this.setActive('discussions')
   },
 };
 </script>

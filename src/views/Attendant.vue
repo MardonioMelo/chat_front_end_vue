@@ -1,16 +1,19 @@
 <template>
   <div class="layout">
     <NavbarItem :avatar="user_avatar" />  
+    <ChatItem/>
   </div>
 </template>
 
 <script>
 import NavbarItem from "../components/NavbarItem.vue";
+import ChatItem from '../components/ChatItem.vue'
 
 export default {
   name: "Attendant",
   components: {
-    NavbarItem  
+    NavbarItem,
+    ChatItem
   },
   data() {
     return {

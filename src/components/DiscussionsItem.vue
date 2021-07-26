@@ -1,33 +1,22 @@
 <template>
 <!-- Start of Discussions -->
-<div id="discussions" class="tab-pane fade">
+<div id="discussions" class="tab-pane fade active show">
     <div class="search">
         <form class="form-inline position-relative">
-            <input type="search" class="form-control" id="conversations" placeholder="Search for conversations...">
-            <button type="button" class="btn btn-link loop"><i class="material-icons">search</i></button>
-        </form>
-        <button class="btn create" data-toggle="modal" data-target="#startnewchat"><i class="material-icons">create</i></button>
-    </div>
-    <div class="list-group sort">
-        <button class="btn filterDiscussionsBtn active show" data-toggle="list" data-filter="all">All</button>
-        <button class="btn filterDiscussionsBtn" data-toggle="list" data-filter="read">Read</button>
-        <button class="btn filterDiscussionsBtn" data-toggle="list" data-filter="unread">Unread</button>
-    </div>						
+            <input type="search" class="form-control" id="conversations" placeholder="Pesquisar conversas...">
+            <button type="button" class="btn btn-link loop"><span class="material-icons"><i class="fa fa-search" aria-hidden="true"></i></span></button>
+        </form>        
+    </div>   			
     <div class="discussions">
         <h1>Fila de Espera</h1>
         <div class="list-group" id="chats" role="tablist">
             <a href="#list-chat" class="filterDiscussions all unread single active" id="list-chat-list" data-toggle="list" role="tab">
                 <img class="avatar-md" src="https://stafforgserv.com.au/wp-content/uploads/2018/09/user-img.png" data-toggle="tooltip" data-placement="top" title="Janette" alt="avatar">
-                <div class="status">
-                    <span class="material-icons online"><i class="fas fa-record-vinyl" aria-hidden="true"></i></span> 											
-                </div>
-                <div class="new bg-yellow">
-                    <span>+7</span>
-                </div>
+                             
                 <div class="data">
-                    <h5>Marilene Lima</h5>
-                    <span>Seg</span>
-                    <p>Um novo recurso foi atualizado em sua conta. Confira...</p>
+                    <h5>name</h5>
+                    <span>dia_semana</span>
+                    <p>mensagem</p>
                 </div>
             </a>									
             
@@ -76,45 +65,11 @@
     </div>
 </div>
 <!-- End of Discussions -->
-<!-- Start of Create Chat -->
-<div class="modal fade" id="startnewchat" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="requests">
-            <div class="title">
-                <h1>Start new chat</h1>
-                <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="material-icons">close</i></button>
-            </div>
-            <div class="content">
-                <form>
-                    <div class="form-group">
-                        <label for="participant">Recipient:</label>
-                        <input type="text" class="form-control" id="participant" placeholder="Add recipient..." required>
-                        <div class="user" id="recipient">
-                            <img class="avatar-sm" src="dist/img/avatars/avatar-female-5.jpg" alt="avatar">
-                            <h5>Keith Morris</h5>
-                            <button class="btn"><i class="material-icons">close</i></button>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="topic">Topic:</label>
-                        <input type="text" class="form-control" id="topic" placeholder="What's the topic?" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea class="text-control" id="message" placeholder="Send your welcome message...">Hmm, are you friendly?</textarea>
-                    </div>
-                    <button type="submit" class="btn button w-100">Start New Chat</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End of Create Chat -->
 </template>
 
 <script>
 export default {
-    name: "DiscussionsItem"
+    name: "DiscussionsItem",   
 }
 </script>
 

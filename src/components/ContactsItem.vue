@@ -1,6 +1,6 @@
 <template>
 <!-- Start of Contacts -->
-<div id="members" class="tab-pane fade active show">
+<div id="members" class="tab-pane fade">
     <div class="search">
         <form class="form-inline position-relative">
             <input type="search" class="form-control" id="people" placeholder="Pesquisar por pessoa...">

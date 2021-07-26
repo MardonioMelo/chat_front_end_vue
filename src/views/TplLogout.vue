@@ -6,19 +6,8 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="content">
-                            <h1>Create Account</h1>
-                            <div class="third-party">
-                                <button class="btn item bg-blue">
-                                    <i class="material-icons">pages</i>
-                                </button>
-                                <button class="btn item bg-teal">
-                                    <i class="material-icons">party_mode</i>
-                                </button>
-                                <button class="btn item bg-purple">
-                                    <i class="material-icons">whatshot</i>
-                                </button>
-                            </div>
-                            <p>or use your email for registration:</p>
+                            <h1>Criar Conta</h1>                            
+                            <p>Use seu CPF:</p>
                             <form class="signup">
                                 <div class="form-parent">
                                     <div class="form-group">
@@ -34,9 +23,10 @@
                                     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                                     <button class="btn icon"><i class="material-icons">lock_outline</i></button>
                                 </div>
-                                <button type="submit" class="btn button" formaction="index-2.html">Sign Up</button>
+                                <router-link class="btn button" to="/">Inscrever-se</router-link>
+                               
                                 <div class="callout">
-                                    <span>Already a member? <a href="sign-in.html">Sign In</a></span>
+                                    <span>Already a member? <router-link to="/login">Entrar</router-link></span>                                       
                                 </div>
                             </form>
                         </div>
@@ -51,8 +41,8 @@
                 <div class="col-md-12">
                     <div class="preference">
                         <h2>Welcome Back!</h2>
-                        <p>To keep connected with your friends please login with your personal info.</p>
-                        <a href="sign-in.html" class="btn button">Sign In</a>
+                        <p>To keep connected with your friends please login with your personal info.</p>                      
+                         <router-link class="btn button" to="/login">Entrar</router-link>
                     </div>
                 </div>
             </div>

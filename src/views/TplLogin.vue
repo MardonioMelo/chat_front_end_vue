@@ -6,31 +6,20 @@
         <div class="container">
           <div class="col-md-12">
             <div class="content">
-              <h1>Sign in to Swipe</h1>
-              <div class="third-party">
-                <button class="btn item bg-blue">
-                  <i class="material-icons">pages</i>
-                </button>
-                <button class="btn item bg-teal">
-                  <i class="material-icons">party_mode</i>
-                </button>
-                <button class="btn item bg-purple">
-                  <i class="material-icons">whatshot</i>
-                </button>
-              </div>
-              <p>or use your email account:</p>
+              <h1>Faça login</h1>             
+              <p>Use seu CPF:</p>
               <form>
                 <div class="form-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required>
-                  <button class="btn icon"><i class="material-icons">mail_outline</i></button>
+                  <input type="number" id="inputText" class="form-control" placeholder="Seu CPF" required>
+                  <button class="btn icon"><i class="material-icons"><i class="fas fa-id-card" aria-hidden="true"></i></i></button>
                 </div>
                 <div class="form-group">
                   <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <button class="btn icon"><i class="material-icons">lock_outline</i></button>
+                  <button class="btn icon"><i class="material-icons"><i class="fas fa-lock" aria-hidden="true"></i></i></button>
                 </div>
-                <button type="submit" class="btn button" formaction="index-2.html">Sign In</button>
+                <button type="submit" class="btn button" formaction="index-2.html">Entrar</button>
                 <div class="callout">
-                  <span>Don't have account? <a href="sign-up.html">Create Account</a></span>
+                  <span>Não tem conta?  <router-link to="/logout">Criar conta</router-link></span>
                 </div>
               </form>
             </div>
@@ -44,9 +33,9 @@
       <div class="container">
         <div class="col-md-12">
           <div class="preference">
-            <h2>Hello, Friend!</h2>
-            <p>Enter your personal details and start your journey with Swipe today.</p>
-            <a href="sign-up.html" class="btn button">Sign Up</a>
+            <h2>Olá amigo(a)!</h2>
+            <p>Cadastre-se para começar a atender clientes.</p>
+            <router-link to="/logout" class="btn button">Inscrever-se</router-link>            
           </div>
         </div>
       </div>
