@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="categories" id="accordionSettings">
-            <h1>Settings</h1>
+            <h1>Configurações</h1>
             <!-- Start of My Account -->
             <div class="category">
                 <a href="#" class="title collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

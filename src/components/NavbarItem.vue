@@ -79,7 +79,7 @@ export default {
   },
   data() {
     return {
-     activeItem: 'active'
+     activeItem: 'active show'
     };
   },
   created() {

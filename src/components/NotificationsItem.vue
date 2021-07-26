@@ -13,7 +13,7 @@
         <button class="btn filterNotificationsBtn" data-toggle="list" data-filter="oldest">Oldest</button>
     </div>						
     <div class="notifications">
-        <h1>Notifications</h1>
+        <h1>Notificações</h1>
         <div class="list-group" id="alerts" role="tablist">
             <a href="#" class="filterNotifications all latest notification" data-toggle="list">
                 <img class="avatar-md" src="dist/img/avatars/avatar-female-1.jpg" data-toggle="tooltip" data-placement="top" title="Janette" alt="avatar">
