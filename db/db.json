@@ -45,7 +45,7 @@
                     "name": "Carla",
                     "uuid": "qwertyuiopasdfghjklzxcvbnm",
                     "lastname": "Sandra Gomes",
-                    "avatar": "http://192.168.0.12:8080/avatars/avatar-1.png",
+                    "avatar": "http://localhost:8080/avatars/avatar-1.png",
                     "cpf": "58847738385",
                     "institution": "Umbrella Corporation",
                     "city": "Raccoon City",
