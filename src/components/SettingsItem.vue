@@ -86,7 +86,7 @@ export default {
     props:["avatar","user_id"],
     methods: {
         async getProfile(){
-            const req = await fetch(process.env.VUE_APP_PROFILE+"/"+user_id)
+            const req = await fetch(process.env.VUE_APP_PROFILE+"/2")
             console.log(req)
         }
     },
