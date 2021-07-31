@@ -39,9 +39,9 @@ export default {
     pageTitle() {
       document.title = this.title;
     },
-    async getProfile() {
-      const req = await fetch("http://localhost:3000/profile/2");
-      const res = await req.json();    
+    async getProfile() {   
+      const req = await fetch(process.env.VUE_APP_PROFILE + "/2");
+      const res = await req.json();  
 
       if(res.error.data.avatar !== null){
           this.user_avatar = res.error.data.avatar;

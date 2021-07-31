@@ -83,7 +83,13 @@
 <script>
 export default {
     name: "SettingsItem",
-    props:["avatar"]
+    props:["avatar","user_id"],
+    methods: {
+        async getProfile(){
+            const req = await fetch(process.env.VUE_APP_PROFILE+"/"+user_id)
+            console.log(req)
+        }
+    },
 }
 </script>
 

@@ -35,7 +35,7 @@ export default {
     },  
     methods: {
         async getRowClients(){
-            const req = await fetch("http://localhost:3000/row")
+            const req = await fetch(process.env.VUE_APP_ROW)
             const res = await req.json()          
 
             if(res.result){
