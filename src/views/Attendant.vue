@@ -34,6 +34,7 @@ export default {
   },
   mounted() {
     this.getProfile();
+    this.increment()
   },
   methods: {
     pageTitle() {
@@ -50,6 +51,10 @@ export default {
       }
       
     },
+    increment() {
+      this.$store.commit('increment')
+      console.log(this.$store.state.count)
+    }
   },
 };
 </script>
