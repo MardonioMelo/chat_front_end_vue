@@ -1,19 +1,19 @@
 <template>
   <div class="layout">
-    <NavbarItem :avatar="user_avatar" />  
-    <ChatItem/>
+    <NavbarItem :avatar="user_avatar" />
+    <ChatItem />
   </div>
 </template>
 
 <script>
 import NavbarItem from "../components/NavbarItem.vue";
-import ChatItem from '../components/ChatItem.vue'
+import ChatItem from "../components/ChatItem.vue";
 
 export default {
   name: "Attendant",
   components: {
     NavbarItem,
-    ChatItem
+    ChatItem,
   },
   data() {
     return {
@@ -34,27 +34,26 @@ export default {
   },
   mounted() {
     this.getProfile();
-    this.increment()
+    this.increment();
   },
   methods: {
     pageTitle() {
       document.title = this.title;
     },
-    async getProfile() {   
+    async getProfile() {
       const req = await fetch(process.env.VUE_APP_PROFILE + "/2");
-      const res = await req.json();  
+      const res = await req.json();
 
-      if(res.error.data.avatar !== null){
-          this.user_avatar = res.error.data.avatar;
-      }else{
-          this.user_avatar = "./avatars/user.png";        
+      if (res.error.data.avatar !== null) {
+        this.user_avatar = res.error.data.avatar;
+      } else {
+        this.user_avatar = "./avatars/user.png";
       }
-      
     },
     increment() {
-      this.$store.commit('increment')
-      console.log(this.$store.state.count)
-    }
+      console.log(this.$store.state.count);
+      console.log(this.$store.state.login.name);
+    },
   },
 };
 </script>
