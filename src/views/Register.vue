@@ -53,7 +53,7 @@
 
 <script>
 export default {
-    name: "TplLogout",
+    name: "Register",
     data() {
         return {
             title: "Chat - Logout"
