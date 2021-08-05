@@ -46,7 +46,7 @@
 
 <script>
 export default {
-    name: "TplLogin",
+    name: "Login",
     data() {
         return {
             title: "Chat - Logoin"

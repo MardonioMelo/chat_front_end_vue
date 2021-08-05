@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Attendant from '../views/Attendant.vue'
 import Client from '../views/Client.vue'
-import TplLogin from '../views/TplLogin.vue'
+import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 
 const routes = [
@@ -17,8 +17,8 @@ const routes = [
   },
   {
     path: '/login',
-    name: 'TplLogin',
-    component: TplLogin    
+    name: 'Login',
+    component: Login    
   },  
   {
     path: '/register',
